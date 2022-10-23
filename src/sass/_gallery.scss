@@ -1,0 +1,43 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+a {
+  width: 100%;
+}
+section {
+  position: relative;
+  top: 115px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.gallery {
+  display: flex;
+  @include first_item_gridFlex();
+  width: 1200;
+}
+img {
+  object-fit: cover;
+  width: 350px;
+}
+.photo-card {
+  height: 350px;
+  margin-bottom: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: rgb(217, 214, 214);
+  @include gridFlex(3);
+  width: 350px;
+}
+
+.info {
+  width: 350px;
+  @include first_item_gridFlex();
+  flex-wrap: nowrap;
+  margin-left: -15px;
+}
+.info-item {
+  @include gridFlex(4);
+  text-align: center;
+}
